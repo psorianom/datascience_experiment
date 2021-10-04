@@ -6,9 +6,7 @@ from models.first_model import read_data, split_data, train_model
 
 df = read_data()
 X_train, X_test, y_train, y_test = split_data(df)
-clf = None
-if clf is None:
-    clf = train_model(X_train, X_test, y_train, y_test)
+clf = train_model(X_train, X_test, y_train, y_test)
 
 
 def predict():
