@@ -1,3 +1,5 @@
+import os
+os.environ['NUMEXPR_NUM_THREADS'] = '1'
 import pandas as pd
 import streamlit as st
 import numexpr
